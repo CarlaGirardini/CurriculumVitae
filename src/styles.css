@@ -1,1 +1,16 @@
-/* You can add global styles to this file, and also import other style files */
+/* Color palette: https://colorhunt.co/palette/202019 */
+
+body {
+  background-color: #797a7e;
+  font-family: 'Raleway', sans-serif;
+}
+
+.main-container {
+  margin: 20px;
+}
+
+h1,
+h2 {
+  text-align: center;
+  font-family: "Cinzel Decorative", cursive;
+}
