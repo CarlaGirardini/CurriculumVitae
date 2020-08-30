@@ -2,7 +2,7 @@
 
 body {
   background-color: #797a7e;
-  font-family: 'Raleway', sans-serif;
+  font-family: "Raleway", sans-serif;
 }
 
 .main-container {
@@ -13,4 +13,22 @@ h1,
 h2 {
   text-align: center;
   font-family: "Cinzel Decorative", cursive;
+}
+
+.card-header {
+  background-color: #e0ece4;
+}
+
+.row-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.customLink,
+.customLink:link,
+.customLink:active,
+.customLink:hover {
+  color: #797a7e;
+  font-weight: 700
 }

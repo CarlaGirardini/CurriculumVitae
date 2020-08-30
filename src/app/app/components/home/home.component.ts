@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { DatePipe } from '@angular/common';
 
 @Component({
   selector: 'app-home',
@@ -10,36 +11,40 @@ export class HomeComponent implements OnInit {
   age: number = this.calculateAge();
   data = [
     {
-      key: 'Surname',
+      key: 'Apellido',
       value: 'Girardini'
     },
     {
-      key: 'Names',
+      key: 'Nombres',
       value: 'Carla Micaela'
     },
     {
-      key: 'Date of birth',
-      value: 'October 16th 1992'
+      key: 'Fecha de nacimiento',
+      value: this.datePipe.transform(new Date(1992, 9, 16), 'longDate')
+      // 'October 16th 1992'
     },
     {
-      key: 'Age',
-      value: `${this.age} years old`
+      key: 'Edad',
+      value: `${this.age} años`
     },
     {
-      key: 'Marital status',
-      value: 'Single'
+      key: 'Estado civil',
+      value: 'Soltera'
     },
     {
-      key: 'Nationality',
-      value: 'Argentinean\nItalian'
+      key: 'Nacionalidad',
+      value: 'Argentina, \nitaliana'
     },
     {
-      key: 'Languages',
-      value: ' Spanish (native) \n English (advanced) \n Italian (basic)'
+      key: 'Idiomas',
+      value: ' Español (nativo), \n Inglés (avanzado), \n Italiano (básico)'
     },
   ];
 
-  constructor(private router: Router) {}
+  constructor(
+    private router: Router,
+    private datePipe: DatePipe
+    ) {}
 
   ngOnInit(): void {}
 
@@ -53,7 +58,6 @@ export class HomeComponent implements OnInit {
     const currentYear = today.getFullYear();
 
     age = currentYear - birthYear;
-    console.log('age', age);
     if (currentMonth < 10){ age--; }
     if (currentMonth === 10 && currentDate < 16){ age--; }
 

@@ -11,17 +11,29 @@
         style="margin-bottom: 2px;"
       />
       <div class="card">
-        <div class="card-header">
-          Content
+        <div i18n="title | card title" class="card-header">
+          Contenido
         </div>
         <div class="list-group list-group-flush">
-          <button class="list-group-item" (click)="navigate('studies')">
-            Studies
+          <button
+            i18n="title | button name"
+            class="list-group-item"
+            (click)="navigate('studies')"
+          >
+            Estudios
           </button>
-          <button class="list-group-item" (click)="navigate('experience')">
-            Experience
+          <button
+            i18n="title | button name"
+            class="list-group-item"
+            (click)="navigate('experience')"
+          >
+            Experiencia
           </button>
-          <button class="list-group-item" (click)="navigate('portfolio')">
+          <button
+            i18n="title | button name"
+            class="list-group-item"
+            (click)="navigate('portfolio')"
+          >
             Portfolio
           </button>
         </div>
@@ -31,11 +43,11 @@
 
   <div class="col-sm-8" style="padding-right: 0px">
     <div class="card">
-      <div class="card-header">Personal data</div>
+      <div i18n="title | card title" class="card-header">Datos personales</div>
       <div class="card-body">
         <div class="row" *ngFor="let item of data">
-          <p class="col-sm-4">{{ item.key }}</p>
-          <p class="col-sm-6">{{ item.value }}</p>
+          <p i18n="content | key value" class="col-sm-4">{{ item.key }}</p>
+          <p i18n="content | description" class="col-sm-6">{{ item.value }}</p>
         </div>
       </div>
     </div>
@@ -43,43 +55,42 @@
 </div>
 
 <div class="card main-container">
-  <div class="card-header">
-    About me
+  <div i18n="title | card title" class="card-header">
+    Sobre mí
   </div>
   <div class="card-body">
     <div class="mb-0">
-      <p>
-        My name is Carla Girardini. I am 27 years old, and I have finished my
-        studies in Acámica's Full Stack Web Development course. I am also
-        trained in science studies due to a three-year BA course on Astronomy at
-        FaMAF - UNC (National University of Córdoba). I have experience working
-        in web development as well as technical areas, writing
-        scientific-instrumentation procedure manuals, clear communication,
-        public attention, and teaching.
+      <p i18n="content | description">
+        Mi nombre es Carla Girardini, tengo 27 años y estudié Desarrollo Web Full Stack en Acámica. También tengo formación en ciencias exactas debido al cursado de tres años de la carrera Licenciatura en Astronomía en FaMAF - UNC.
       </p>
-      <p>
-        I learn new skills quickly; I am responsible and proactive. I currently
-        have a strong interest in web development and I am looking for new job
-        opportunities in this area.
+      <p i18n="content | description">
+        Poseo experiencia en el ámbito laboral, tanto en desarrollo como en tareas técnicas, elaboración de manuales de procedimientos de instrumentación científica, comunicación, relaciones públicas y capacitación.
+      </p>
+      <p i18n="content | description">
+        Aprendo con rapidez nuevas habilidades, soy responsable y activa. En la actualidad tengo un marcado interés en el desarrollo web y busco oportunidades laborales en ese campo.
       </p>
     </div>
   </div>
 </div>
 
 <div class="card main-container">
-  <div class="card-header">
-    Contact me
+  <div i18n="title | card title" class="card-header">
+    Contacto
   </div>
   <div class="card-body row-content" style="width: 100%;">
     <div class="mb-0 row-content" style="width: 100%;">
-      <div class="row-content">
+      <div class="row-content" style="width: 45%;">
         <p style="display: block"><strong>Email:</strong></p>
         <p style="display: block">carligir@gmail.com</p>
       </div>
-      <div class="row-content">
+      <div class="row-content" style="width: 45%;">
         <p style="display: block"><strong>LinkedIn:</strong></p>
         <p style="display: block">
-          <a href="https://www.linkedin.com/in/carla-girardini/">carla-girardini</a>
+          <a
+            class="customLink"
+            href="https://www.linkedin.com/in/carla-girardini/"
+            >carla-girardini</a
+          >
         </p>
       </div>
     </div>
