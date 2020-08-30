@@ -1,0 +1,26 @@
+.languages{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100px;
+    height: 70%;
+}
+
+.languages img{
+    margin: 5px;
+}
+
+/* .langButton{
+    display: block;
+    width: 20px;
+    height: 70%;
+} */
+
+/* .langButton img{
+    height: 100%;
+} */
+
+/* .languages img{
+    float: left;
+} */

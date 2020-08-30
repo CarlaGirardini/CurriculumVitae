@@ -1,0 +1,98 @@
+<h1>Carla Micaela Girardini</h1>
+<h2>Curriculum Vitae</h2>
+
+<div class="row main-container full-width">
+  <div class="col-sm-4" style="padding-left: 0px;">
+    <div class="card" style="width: 18rem; padding: 2px;">
+      <img
+        src="../../../../assets/img/Picture.png"
+        class="card-img-top"
+        alt="Profile picture"
+        style="margin-bottom: 2px;"
+      />
+      <div class="card">
+        <div i18n="title | card title" class="card-header">
+          Contenido
+        </div>
+        <div class="list-group list-group-flush">
+          <button
+            i18n="title | button name"
+            class="list-group-item"
+            (click)="navigate('studies')"
+          >
+            Estudios
+          </button>
+          <button
+            i18n="title | button name"
+            class="list-group-item"
+            (click)="navigate('experience')"
+          >
+            Experiencia
+          </button>
+          <button
+            i18n="title | button name"
+            class="list-group-item"
+            (click)="navigate('portfolio')"
+          >
+            Portfolio
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-sm-8" style="padding-right: 0px">
+    <div class="card">
+      <div i18n="title | card title" class="card-header">Datos personales</div>
+      <div class="card-body">
+        <div class="row" *ngFor="let item of data">
+          <p i18n="content | key value" class="col-sm-4">{{ item.key }}</p>
+          <p i18n="content | description" class="col-sm-6">{{ item.value }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="card main-container">
+  <div i18n="title | card title" class="card-header">
+    Sobre mí
+  </div>
+  <div class="card-body">
+    <div class="mb-0">
+      <p i18n="content | description">
+        Mi nombre es Carla Girardini, tengo 27 años y estudié Desarrollo Web Full Stack en Acámica. También tengo formación en ciencias exactas debido al cursado de tres años de la carrera Licenciatura en Astronomía en FaMAF - UNC.
+      </p>
+      <p i18n="content | description">
+        Poseo experiencia en el ámbito laboral, tanto en desarrollo como en tareas técnicas, elaboración de manuales de procedimientos de instrumentación científica, comunicación, relaciones públicas y capacitación.
+      </p>
+      <p i18n="content | description">
+        Aprendo con rapidez nuevas habilidades, soy responsable y activa. En la actualidad tengo un marcado interés en el desarrollo web y busco oportunidades laborales en ese campo.
+      </p>
+    </div>
+  </div>
+</div>
+
+<div class="card main-container">
+  <div i18n="title | card title" class="card-header">
+    Contacto
+  </div>
+  <div class="card-body row-content" style="width: 100%;">
+    <div class="mb-0 row-content" style="width: 100%;">
+      <div class="row-content" style="width: 45%;">
+        <p style="display: block"><strong>Email:</strong></p>
+        <p style="display: block">carligir@gmail.com</p>
+      </div>
+      <div class="row-content" style="width: 45%;">
+        <p style="display: block"><strong>LinkedIn:</strong></p>
+        <p style="display: block">
+          <a
+            class="customLink"
+            href="https://www.linkedin.com/in/carla-girardini/"
+            >carla-girardini</a
+          >
+        </p>
+      </div>
+    </div>
+  </div>
+</div>

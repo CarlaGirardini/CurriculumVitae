@@ -1,0 +1,11 @@
+div a,
+div a:active,
+div a:hover,
+div a:link {
+    color: grey;
+}
+
+div{
+    color: gray;
+    padding: 5px;
+}
