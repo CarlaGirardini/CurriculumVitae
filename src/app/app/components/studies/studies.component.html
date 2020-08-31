@@ -1,5 +1,75 @@
 <div class="card main-container">
   <div class="card-header">
+    Habilidades
+  </div>
+  <div class="card-body">
+    <div class="mb-0 row-content">
+      <div class="card" style="width: 18rem;" *ngFor="let skl of skills">
+        <div class="card-header">
+          {{ skl.type }}
+        </div>
+
+        <ul *ngIf="skl.id != 3" class="list-group list-group-flush">
+          <li class="list-group-item" *ngFor="let item of skl.skills"> {{ item }}</li>
+        </ul>
+
+        <div *ngIf="skl.id == 3" class="list-group list-group-flush">
+          <div class="card">
+            <div class="card-header">
+              Lenguajes
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item" *ngFor="let item of skl.languages"> {{ item }}</li>
+            </ul>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              Librerías
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item" *ngFor="let item of skl.libraries"> {{ item }}</li>
+            </ul>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              Patrones y prácticas
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item" *ngFor="let item of skl.patternsAndPractices"> {{ item }}</li>
+            </ul>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              Control de versiones
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item" *ngFor="let item of skl.versionControl"> {{ item }}</li>
+            </ul>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              Bases de datos
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item" *ngFor="let item of skl.databases"> {{ item }}</li>
+            </ul>
+          </div>
+          <div class="card">
+            <div class="card-header">
+              Frameworks
+            </div>
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item" *ngFor="let item of skl.frameworks"> {{ item }}</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="card main-container">
+  <div class="card-header">
     Estudios formales
   </div>
   <div class="card-body">

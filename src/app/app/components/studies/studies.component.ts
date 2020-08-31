@@ -70,6 +70,64 @@ export class StudiesComponent implements OnInit {
     },
   ];
 
+  skills = [
+    {
+      id: 1,
+      type: 'Habilidades blandas',
+      skills: [
+        'Organización de grupos y proyectos',
+        'Trabajo en equipo',
+        'Trabajo interdisciplinario',
+        'Comunicación clara y eficiente',
+        'Puntualidad'
+      ]
+    },
+    {
+      id: 2,
+      type: 'Habilidades técnicas',
+      skills: [
+        'Escritura y confección de informes técnicos',
+        'Matemáticas y algorítmica',
+        'Desarrollo web'
+      ]
+    },
+    {
+      id: 3,
+      type: 'Habilidades en software',
+      languages: [
+        'HTML5',
+        'CSS3',
+        'JavaScript',
+        'TypeScript'
+      ],
+      libraries: [
+        'Angular',
+        'jQuery',
+        'Mocha - Chai'
+      ],
+      patternsAndPractices: [
+        'MVC: Modelo-Vista-Controlador',
+        'TDD: Test-driven-development',
+        'POO: Programación orientada a objetos',
+        'REST APIs'
+      ],
+      versionControl: [
+        'Git',
+        'GitHub',
+        'GitLab',
+        'Tortoise Git',
+        'Bitbucket'
+      ],
+      databases: [
+        'MySQL'
+      ],
+      frameworks: [
+        'Node.js',
+        'Express.js'
+      ]
+    },
+  ];
+
   constructor() {}
 
   ngOnInit(): void {}
