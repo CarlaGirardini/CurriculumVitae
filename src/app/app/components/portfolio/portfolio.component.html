@@ -1,1 +1,63 @@
-<p>portfolio works!</p>
+<div class="card main-container" *ngFor="let project of portfolio">
+  <div class="card-header">
+    {{ project.title }}
+  </div>
+  <div class="card-body">
+    <div class="mb-0 row-content">
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item">
+          <strong>Descripción:</strong> {{ project.description }}
+        </li>
+        <li class="list-group-item">
+          <strong>Objetivo:</strong> {{ project.objective }}
+        </li>
+        <li class="list-group-item">
+          <strong>Tecnologías:</strong>
+          <ul>
+            <li *ngFor="let item of project.technologies">{{ item }}</li>
+          </ul>
+        </li>
+        <li class="list-group-item">
+          <strong>Repositorio:</strong>
+          <p *ngIf="project.repository === ''">"Repositorio privado"</p>
+          <a
+            *ngIf="project.repository !== ''"
+            [href]="project.repository"
+            target="_blank"
+            class="customLink"
+          >
+            {{ project.repository }}</a
+          >
+        </li>
+        <li class="list-group-item" *ngIf="project.deploy != ''">
+          <strong>URL al sitio desplegado:</strong>
+          <a [href]="project.deploy" target="_blank" class="customLink">
+            {{ project.deploy }}
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- <div class="card main-container">
+          <div class="card-header">
+            Cursos y certificaciones
+          </div>
+          <div class="card-body">
+            <div class="mb-0 row-content">
+              <div class="card" style="width: 18rem;" *ngFor="let course of courses">
+                <div class="card-header">
+                  {{ course.title }}
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><strong>Institución:</strong> {{course.institution}}</li>
+                  <li class="list-group-item"><strong>Periodo:</strong> {{course.period}}</li>
+                  <li class="list-group-item"><strong>Estado:</strong> {{course.status}}</li>
+                  <li class="list-group-item" *ngIf="course.notes != ''"><strong>Notas:</strong> {{course.notes}}</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+         -->
