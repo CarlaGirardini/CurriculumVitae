@@ -1,12 +1,31 @@
 /* Color palette: https://colorhunt.co/palette/202019 */
 
+*{
+  box-sizing: border-box;
+  margin: 0;
+}
+
 body {
+  width: 100%;
   background-color: #797a7e;
   font-family: "Raleway", sans-serif;
 }
 
 .main-container {
-  margin: 20px;
+  width: 85%;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 5px;
+  /* position: relative; */
+}
+
+.stretched-container{
+  /* width: 100%;
+  height: 100%; */
+  flex-grow: 2;
 }
 
 h1,
@@ -16,6 +35,7 @@ h2 {
 }
 
 .card-header {
+  width: 100%;
   background-color: #e0ece4;
 }
 
