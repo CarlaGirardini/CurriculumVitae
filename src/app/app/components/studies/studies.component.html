@@ -3,8 +3,8 @@
     Habilidades
   </div>
   <div class="card-body">
-    <div class="mb-0 row-content">
-      <div class="card" style="width: 18rem;" *ngFor="let skl of skills">
+    <div id="skillsCard" class="mb-0 row-content">
+      <div class="card" *ngFor="let skl of skills">
         <div class="card-header">
           {{ skl.type }}
         </div>
@@ -13,7 +13,7 @@
           <li class="list-group-item" *ngFor="let item of skl.skills"> {{ item }}</li>
         </ul>
 
-        <div *ngIf="skl.id == 3" class="list-group list-group-flush">
+        <div id="softwareSkills" *ngIf="skl.id == 3" class="list-group list-group-flush">
           <div class="card">
             <div class="card-header">
               Lenguajes
@@ -54,11 +54,11 @@
               <li class="list-group-item" *ngFor="let item of skl.databases"> {{ item }}</li>
             </ul>
           </div>
-          <div class="card">
+          <div class="card" style="width: 18rem;" id="frameworks">
             <div class="card-header">
               Frameworks
             </div>
-            <ul class="list-group list-group-flush">
+            <ul class="list-group list-group-flush" style="width: 100%;">
               <li class="list-group-item" *ngFor="let item of skl.frameworks"> {{ item }}</li>
             </ul>
           </div>

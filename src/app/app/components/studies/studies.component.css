@@ -1,9 +1,30 @@
-div.row-content div.card{
-    margin: 5px;
+div.row-content div.card {
+  margin: 5px;
 }
 
-/* div.card-body{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-} */
+.row-content {
+  flex-wrap: wrap;
+}
+
+#skillsCard .card {
+  width: 18rem;
+}
+
+#skillsCard .card:last-child {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#frameworks {
+  width: 18rem;
+}
+
+#softwareSkills {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
