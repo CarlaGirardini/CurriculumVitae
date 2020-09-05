@@ -11,6 +11,12 @@ body {
   font-family: "Raleway", sans-serif;
 }
 
+app-root {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 .main-container {
   width: 85%;
   margin: 20px auto;
