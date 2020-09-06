@@ -17,14 +17,31 @@ div.row-content div.card {
   flex-wrap: wrap;
 }
 
-#frameworks {
-  width: 18rem;
-}
-
 #softwareSkills {
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap;
+}
+
+#frameworks {
+  flex-direction: column;
+  width: 18rem;
+  /* justify-content: flex-start; */
+}
+
+#frameworks .card-header {
+  height: min-content;
+}
+
+#frameworksContent {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+}
+
+#frameworksContent li {
+  display: block;
+  width: 100%;
 }

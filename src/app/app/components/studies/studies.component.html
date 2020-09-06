@@ -54,11 +54,11 @@
               <li class="list-group-item" *ngFor="let item of skl.databases"> {{ item }}</li>
             </ul>
           </div>
-          <div class="card" style="width: 18rem;" id="frameworks">
+          <div class="card" style="width: 18rem; flex-direction: column;" id="frameworks">
             <div class="card-header">
               Frameworks
             </div>
-            <ul class="list-group list-group-flush" style="width: 100%;">
+            <ul class="list-group list-group-flush" id="frameworksContent">
               <li class="list-group-item" *ngFor="let item of skl.frameworks"> {{ item }}</li>
             </ul>
           </div>
