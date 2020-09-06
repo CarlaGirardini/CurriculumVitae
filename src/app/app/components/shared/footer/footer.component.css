@@ -8,4 +8,8 @@ div a:link {
 div{
     color: gray;
     padding: 5px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
 }

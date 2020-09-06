@@ -1,12 +1,44 @@
 /* Color palette: https://colorhunt.co/palette/202019 */
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
 body {
+  width: 100%;
   background-color: #797a7e;
   font-family: "Raleway", sans-serif;
 }
 
+app-root {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
 .main-container {
-  margin: 20px;
+  width: 85%;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 5px;
+}
+
+.info-container {
+  width: 18rem;
+  padding: 5px;
+}
+
+.col.info-container {
+  padding-left: 0;
+  padding-top: 0;
+}
+
+.stretched-container {
+  flex-grow: 2;
 }
 
 h1,
@@ -16,6 +48,7 @@ h2 {
 }
 
 .card-header {
+  width: 100%;
   background-color: #e0ece4;
 }
 
@@ -25,10 +58,93 @@ h2 {
   justify-content: space-evenly;
 }
 
+.row-content .row-content {
+  width: 45%;
+}
+
 .customLink,
 .customLink:link,
 .customLink:active,
 .customLink:hover {
   color: #797a7e;
-  font-weight: 700
+  font-weight: 700;
+}
+
+app-home,
+app-studies,
+app-experience,
+app-portfolio {
+  max-width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  /* Mobile design */
+
+  .main-container {
+    width: 95%;
+    margin: 7px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 3px;
+  }
+
+  .info-container {
+    margin: auto;
+    padding: 0;
+  }
+
+  .col.info-container {
+    padding: 0px;
+  }
+
+  .stretched-container {
+    align-items: center;
+    margin: auto;
+    flex-grow: 1;
+  }
+
+  h1,
+  h2 {
+    text-align: center;
+    font-family: "Cinzel Decorative", cursive;
+  }
+
+  .card {
+    margin-top: 3px;
+  }
+
+  .card-header {
+    width: 100%;
+    background-color: #e0ece4;
+  }
+
+  .card-body {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .row-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .row-content .row-content {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: start;
+  }
+
+  .customLink,
+  .customLink:link,
+  .customLink:active,
+  .customLink:hover {
+    color: #797a7e;
+    font-weight: 600;
+  }
 }

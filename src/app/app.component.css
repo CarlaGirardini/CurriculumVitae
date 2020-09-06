@@ -258,6 +258,14 @@ svg#clouds {
   width: 1920px;
 }
 
+#mainContainer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 10%;
+  margin: auto;
+}
+
 /* Responsive Styles */
 @media screen and (max-width: 767px) {
   .card-container > *:not(.circle-link),
