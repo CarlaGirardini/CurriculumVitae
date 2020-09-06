@@ -131,6 +131,7 @@ app-portfolio {
     flex-direction: column;
     align-items: flex-start;
   }
+  
   .row-content .row-content {
     width: 100%;
     display: flex;
