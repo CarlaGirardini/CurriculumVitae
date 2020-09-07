@@ -80,13 +80,13 @@ app-portfolio {
 @media only screen and (max-width: 768px) {
   /* Mobile design */
 
-  .main-container {
+  .card.main-container {
     width: 95%;
     margin: 7px auto;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    flex-direction: column;
     padding: 3px;
   }
 
@@ -121,8 +121,10 @@ app-portfolio {
   }
 
   .card-body {
+    max-width: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
 
   .row-content {
@@ -131,7 +133,7 @@ app-portfolio {
     flex-direction: column;
     align-items: flex-start;
   }
-  
+
   .row-content .row-content {
     width: 100%;
     display: flex;
