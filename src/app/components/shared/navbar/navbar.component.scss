@@ -1,0 +1,13 @@
+@import '../../../../variables.scss';
+
+.custom-nav{
+    background-color: $main-accent;
+
+    .custom-nav-link{
+        color: $active;
+
+        &.active {
+            background-color: $light-background;
+        }
+    }
+}
