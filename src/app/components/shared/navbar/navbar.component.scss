@@ -1,13 +1,32 @@
 @import '../../../../variables.scss';
 
-.custom-nav{
+.custom-nav {
     background-color: $main-accent;
-
-    .custom-nav-link{
-        color: $active;
-
+    border-bottom: none;
+    
+    &.over-nav {
+        border: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: $light-background;
+        
+        span {
+            font-size: 1.5rem;
+            &:first-of-type {
+                font-size: 2rem;
+            }
+        }
+    }
+    
+    .custom-nav-link {
+        border-bottom: none;
+        color: $light-background;
+        
         &.active {
             background-color: $light-background;
+            color: $active;
+            font-weight: 600;
         }
     }
 }
