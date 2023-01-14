@@ -1,0 +1,35 @@
+@import '../../../variables.scss';
+
+.main-container {
+    .main-title {
+        color: $main-accent;
+    }
+
+    .card-header {
+        background-color: $medium-accent;
+        color: white;
+        border-bottom: none;
+        font-weight: 500;
+        font-size: 1.05em;
+    }
+
+    .long-list {
+        display: flex;
+
+        ul {
+            width: 100%;
+        }
+    }
+
+    .form-check-label {
+        color: black;
+    }
+
+    .form-check-input {
+        border-color: $main-accent;
+        
+        &:checked {
+            background-color: $main-accent;
+        }
+    }
+}
