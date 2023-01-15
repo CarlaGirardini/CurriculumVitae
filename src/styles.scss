@@ -16,6 +16,11 @@ body {
         .custom-section {
             width: 75%;
             margin-top: 2rem;
+
+            h2 {
+                color: $main-accent;
+                margin-bottom: 2.5rem;
+            }
         }
     }
 }
