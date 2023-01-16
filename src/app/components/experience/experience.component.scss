@@ -5,12 +5,6 @@
         margin-bottom: 1rem;
 
         .card-header {
-            background-color: $medium-accent;
-            color: white;
-            border-bottom: none;
-            font-weight: 500;
-            font-size: 1.05em;
-            
             &.current-role {
                 display: flex;
                 justify-content: space-between;
@@ -32,12 +26,6 @@
                 &.list-group-item-dark {
                     border-radius: 5px;
                 }
-            }
-
-            a {
-                color: $main-accent;
-                font-style: italic;
-                cursor: pointer;
             }
 
             footer {

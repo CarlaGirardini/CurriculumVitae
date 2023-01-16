@@ -17,9 +17,25 @@ body {
             width: 75%;
             margin-top: 2rem;
 
+            .card {
+                .card-header {
+                    background-color: $medium-accent;
+                    color: white;
+                    border-bottom: none;
+                    font-weight: 500;
+                    font-size: 1.05em;
+                }
+            }
+
             h2 {
                 color: $main-accent;
                 margin-bottom: 2.5rem;
+            }
+
+            a {
+                color: $main-accent;
+                font-style: italic;
+                cursor: pointer;
             }
         }
     }
