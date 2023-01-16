@@ -1,0 +1,34 @@
+@import '../../../variables.scss';
+
+.custom-section {
+    .custom-button {
+        border: none;
+        background-color: $main-accent;
+        font-weight: 500;
+        color: $light-background;
+    }
+
+    .card {
+        margin-bottom: 1rem;
+
+        .card-body {
+            .list-group-item {
+                font-size: 0.9em;
+    
+                &:first-of-type {
+                    font-size: 0.7em;
+                    font-style: italic;
+                    text-align: end;
+                }
+    
+                &:last-of-type {
+                    font-size: 0.7em;
+                }
+    
+                &.list-group-item-dark {
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+}

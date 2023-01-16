@@ -7,6 +7,7 @@ import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { HomeComponent } from './components/home/home.component';
 import { ExperienceComponent } from './components/experience/experience.component';
 import { PublicationsComponent } from './components/publications/publications.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { PublicationsComponent } from './components/publications/publications.co
     NavbarComponent,
     HomeComponent,
     ExperienceComponent,
-    PublicationsComponent
+    PublicationsComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
