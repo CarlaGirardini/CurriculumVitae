@@ -2,11 +2,13 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ExperienceComponent } from './components/experience/experience.component';
 import { HomeComponent } from './components/home/home.component';
+import { PublicationsComponent } from './components/publications/publications.component';
 
 const routes: Routes = [
   // Public routes
   {path: 'home', component: HomeComponent},
   {path: 'experience', component: ExperienceComponent},
+  {path: 'publications', component: PublicationsComponent},
 
   // Default route
   {path: '**', pathMatch: 'full', redirectTo: 'home'} // Default route: Home
