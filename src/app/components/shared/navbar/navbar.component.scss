@@ -28,5 +28,18 @@
             color: $active;
             font-weight: 600;
         }
+
+    }
+
+    .dropdown-menu {
+        background-color: $light-background;
+        border-color: $medium-accent;
+        
+        li {
+            a {
+                color: $main-accent;
+
+            }
+        }
     }
 }
