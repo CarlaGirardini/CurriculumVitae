@@ -6,6 +6,10 @@
         background-color: $main-accent;
         font-weight: 500;
         color: $light-background;
+
+        &:hover {
+            background-color: $medium-accent;
+        }
     }
 
     .card {
