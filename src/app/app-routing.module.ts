@@ -4,6 +4,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { ExperienceComponent } from './components/experience/experience.component';
 import { HomeComponent } from './components/home/home.component';
 import { PublicationsComponent } from './components/publications/publications.component';
+import { StudiesComponent } from './components/studies/studies.component';
 
 const routes: Routes = [
   // Public routes
@@ -11,6 +12,7 @@ const routes: Routes = [
   {path: 'experience', component: ExperienceComponent},
   {path: 'publications', component: PublicationsComponent},
   {path: 'contact', component: ContactComponent},
+  {path: 'studies', component: StudiesComponent},
 
   // Default route
   {path: '**', pathMatch: 'full', redirectTo: 'home'} // Default route: Home
