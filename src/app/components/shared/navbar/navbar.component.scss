@@ -1,0 +1,45 @@
+@import '../../../../variables.scss';
+
+.custom-nav {
+    background-color: $main-accent;
+    border-bottom: none;
+    
+    &.over-nav {
+        border: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: $light-background;
+        
+        span {
+            font-size: 1.5rem;
+            &:first-of-type {
+                font-size: 2rem;
+            }
+        }
+    }
+    
+    .custom-nav-link {
+        border-bottom: none;
+        color: $light-background;
+        
+        &.active {
+            background-color: $light-background;
+            color: $active;
+            font-weight: 600;
+        }
+
+    }
+
+    .dropdown-menu {
+        background-color: $light-background;
+        border-color: $medium-accent;
+        
+        li {
+            a {
+                color: $main-accent;
+
+            }
+        }
+    }
+}

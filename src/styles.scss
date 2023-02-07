@@ -1,0 +1,42 @@
+@import './variables.scss';
+
+/******************/
+/* GENERAL STYLES */
+/******************/
+
+body {
+    background-color: $light-background;
+
+    .main-container {
+        margin: 2rem 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .custom-section {
+            width: 75%;
+            margin-top: 2rem;
+
+            .card {
+                .card-header {
+                    background-color: $medium-accent;
+                    color: white;
+                    border-bottom: none;
+                    font-weight: 500;
+                    font-size: 1.05em;
+                }
+            }
+
+            h2 {
+                color: $main-accent;
+                margin-bottom: 2.5rem;
+            }
+
+            a {
+                color: $main-accent;
+                font-style: italic;
+                cursor: pointer;
+            }
+        }
+    }
+}

@@ -1,20 +1,27 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
-import { HomeComponent } from './app/components/home/home.component';
-import { StudiesComponent } from './app/components/studies/studies.component';
-import { ExperienceComponent } from './app/components/experience/experience.component';
-import { PortfolioComponent } from './app/components/portfolio/portfolio.component';
+import { RouterModule, Routes } from '@angular/router';
+import { ContactComponent } from './components/contact/contact.component';
+import { ExperienceComponent } from './components/experience/experience.component';
+import { HomeComponent } from './components/home/home.component';
+import { PublicationsComponent } from './components/publications/publications.component';
+import { StudiesComponent } from './components/studies/studies.component';
 
 const routes: Routes = [
+  // Public routes
   {path: 'home', component: HomeComponent},
-  {path: 'studies', component: StudiesComponent},
   {path: 'experience', component: ExperienceComponent},
-  {path: 'portfolio', component: PortfolioComponent},
-  {path: '**', pathMatch: 'full', redirectTo: 'home'}
+  {path: 'publications', component: PublicationsComponent},
+  {path: 'contact', component: ContactComponent},
+  {path: 'studies', component: StudiesComponent},
+
+  // Default route
+  {path: '**', pathMatch: 'full', redirectTo: 'home'} // Default route: Home
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes, {
+    anchorScrolling: 'enabled'
+  })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

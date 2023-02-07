@@ -1,0 +1,27 @@
+@import '../../../variables.scss';
+
+.main-container {
+    .main-title {
+        color: $main-accent;
+    }
+
+    .long-list {
+        display: flex;
+
+        ul {
+            width: 100%;
+        }
+    }
+
+    .form-check-label {
+        color: black;
+    }
+
+    .form-check-input {
+        border-color: $main-accent;
+        
+        &:checked {
+            background-color: $main-accent;
+        }
+    }
+}
