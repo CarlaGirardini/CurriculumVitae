@@ -8,6 +8,10 @@
             &.current-role {
                 display: flex;
                 justify-content: space-between;
+
+                .current-tag {
+                    height: 2em;
+                }
             }
         }
     
