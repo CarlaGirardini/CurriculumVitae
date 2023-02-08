@@ -12,4 +12,8 @@ export class StudiesComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  showFullText(event: any) {
+    event.target.classList.toggle("ellipsis");
+  }
+
 }

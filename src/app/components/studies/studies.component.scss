@@ -29,3 +29,17 @@
         }
     }
 }
+
+@media only screen and (max-width: 600px) {
+    
+    .long-list {
+        flex-wrap: wrap;
+    }
+
+    .ellipsis {
+        display: inline-block;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+}
