@@ -83,7 +83,7 @@
 
 [[redirects]]
   from = "/home"
-  to = "https://carlagirardini.netlify.app"
+  to = "/"
 
 # A redirect rule with many of the supported properties
 # [[redirects]]
